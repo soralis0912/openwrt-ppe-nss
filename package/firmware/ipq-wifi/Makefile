@@ -31,6 +31,7 @@ ALLWIFIBOARDS:= \
 	8devices_mango \
 	alfa-network_ap120c-ax \
 	aliyun_ap8220 \
+	arista_c-360 \
 	arcadyan_aw1000 \
 	aruba_ap-303 \
 	aruba_ap-303h \
@@ -252,6 +253,7 @@ $(eval $(call generate-ipq-wifi-package,8devices_kiwi,8devices Kiwi))
 $(eval $(call generate-ipq-wifi-package,8devices_mango,8devices Mango))
 $(eval $(call generate-ipq-wifi-package,alfa-network_ap120c-ax,ALFA Network AP120C-AX))
 $(eval $(call generate-ipq-wifi-package,aliyun_ap8220,Aliyun AP8220))
+$(eval $(call generate-ipq-wifi-package,arista_c-360,Arista C-360))
 $(eval $(call generate-ipq-wifi-package,arcadyan_aw1000,Arcadyan AW1000))
 $(eval $(call generate-ipq-wifi-package,aruba_ap-303,Aruba AP-303))
 $(eval $(call generate-ipq-wifi-package,aruba_ap-303h,Aruba AP-303H))

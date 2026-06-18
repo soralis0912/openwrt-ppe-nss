@@ -17,6 +17,7 @@ case "$FIRMWARE" in
 		ath11k_set_macflag
 		;;
 	arcadyan,aw1000|\
+	arista,c-360|\
 	buffalo,wxr-5950ax12|\
 	cmcc,rm2-6|\
 	netgear,wax218)
@@ -163,6 +164,16 @@ case "$FIRMWARE" in
 		;;
 	xiaomi,ax9000)
 		caldata_extract "0:art" 0x26800 0x20000
+		;;
+	arista,c-360)
+		case "$FIRMWARE" in
+		*"0000:01:00.0"*)
+			caldata_extract "0:art" 0x26800 0x20000
+			;;
+		*"0001:01:00.0"*)
+			caldata_extract "0:art" 0x4c000 0x20000
+			;;
+		esac
 		;;
 	esac
 	;;
